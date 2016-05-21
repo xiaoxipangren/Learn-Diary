@@ -34,3 +34,14 @@ Everything in linux is file/document, including hardware.
 * w: modify the content of directory,that is, add/delete/rename/move files and subdirs of directory.
 * x: user can use "cd" command to make the directory as work directory. 
 ###### warn: if user has "r" permission to a directory, it doesn't mean user can change directory to this directory.
+
+
+####File System
+1. Three type area
+    * superblock: record overall filesystem information, including total count,used count, remained count of  inode/block
+    * inode: record file/directory attribute, such as permission, owner, group, etc, typically, inode area will record address of block area,just like pointer in C, by which computer can locate the real data of a file/directory. Each inode has same capacity, such as 128/256 bytes. 
+    * block: record data of file/directory
+2. EXT2 and FAT
+ Exts is called indexed allocation file system, whose inode area record all block area addresses, while FAT is linked allocation file system, whose block area can be reached one by one, like a linked list.
+
+
