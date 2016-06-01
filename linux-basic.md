@@ -44,4 +44,5 @@ Everything in linux is file/document, including hardware.
 2. EXT2 and FAT
  Exts is called indexed allocation file system, whose inode area record all block area addresses, while FAT is linked allocation file system, whose block area can be reached one by one, like a linked list.
 
-
+####Environment and Variable
+1.source: apply new env variable right now after modifying without rebooting, usage like, "source ~/.bashrc"
